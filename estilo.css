@@ -1,0 +1,22 @@
+@charset "UFT-8";
+
+body {
+    background-image: url(cr7.gif);
+}
+
+h1 {
+    color: aliceblue;
+    align-items: center;
+}
+
+h1:hover {
+    background-color: rgb(7, 74, 136);
+}
+
+p{
+    color: aliceblue;
+}
+
+label {
+    color: aliceblue;
+}

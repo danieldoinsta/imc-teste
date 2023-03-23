@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2012/04/10/17/40/vitamins-26622_960_720.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Indomável </title>
+</head>
+
+<body>
+
+    <h1> IMC - Instituto Municipal do Cristiano </h1>
+
+    <label for="peso"> Peso (kg) </label>
+    <input type="number" id="peso" name="peso">
+
+    <label for="altura"> Altura </label>
+    <input type="number" id="altura" name="altura">
+
+    <button onclick="calcularimc()"> Calcular IMC </button>
+    <br>
+    <p> Seu índice de massa corporal é <span id="resultado"> </span> </p>
+
+    <script>
+        function calcularimc() {
+            const peso = document.getElementById("peso").value;
+
+
+            const altura = document.getElementById("altura").value;
+
+            const imc = peso / (altura **2);
+
+            document.getElementById("resultado").textContent = imc.toFixed(2); 
+        }
+        
+    </script>
+
+
+
+</body>
+
+</html>
